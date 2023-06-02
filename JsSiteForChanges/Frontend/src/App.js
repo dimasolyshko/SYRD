@@ -4,6 +4,7 @@ import Container from "@mui/material/Container";
 
 import { Header } from "./components";
 import { Home, FullPost, Registration, AddPost, Login } from "./pages";
+import { Populate } from './pages/Populate/Populate';
 import React from 'react';
 import { selectIsAuth, fetchAuthMe } from "./redux/slices/auth";
 
@@ -25,6 +26,7 @@ function App() {
           <Route path = "/add-post" element = {<AddPost />} />
           <Route path = "/login" element = {<Login />} />
           <Route path = "/register" element = {<Registration />} />
+          <Route path = "/posts/popular" element = {<Populate />} />
         </Routes>
       </Container>
     </>
