@@ -11,7 +11,7 @@ import { UserController, PostController } from './controllers/index.js';
 
 mongoose
     .connect(
-      'mongodb+srv://Admin:1111@cluster0.ioumquo.mongodb.net/testsVacancies',
+      'mongodb+srv://Admin:****@cluster0.ioumquo.mongodb.net/testsVacancies',
     )
     .then(()=> console.log('Db OK'))
     .catch((err) => console.log('Db error', err));
@@ -54,3 +54,5 @@ app.listen(4444,(err) =>{
 
     console.log('Server OK');
 });
+
+//1111
